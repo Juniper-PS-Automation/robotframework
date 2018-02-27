@@ -1,4 +1,5 @@
-FROM juniperps/map-automation-helper:v0.1.2
+ARG MAP_AUTOMATION_HELPER_VER=latest
+FROM juniperps/map-automation-helper:${MAP_AUTOMATION_HELPER_VER}
 
 LABEL net.juniper.ps.automation.description="base robot testing container" \
       net.juniper.ps.automation.extra="also uses pyez-ansible container" \
